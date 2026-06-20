@@ -8,28 +8,38 @@
     android:background="#0D1117">
 
     <TextView
-        android:text="GitSimple"
-        android:layout_width="wrap_content
-cat > ~/GitSimple/app/src/main/res/layout/activity_repo_list.xml << 'EOF'
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#0D1117">
-
-    <TextView
-        android:text="Repositories"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
+        android:text="GitSimple"
+        android:textSize="32sp"
         android:textColor="#E6EDF3"
         android:textStyle="bold"
-        android:padding="16dp"/>
+        android:layout_marginBottom="8dp"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvRepos"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GitHub client yang lebih simpel"
+        android:textSize="14sp"
+        android:textColor="#8B949E"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/etToken"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:hint="Masukkan GitHub Token"
+        android:textColorHint="#8B949E"
+        android:textColor="#E6EDF3"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="#238636"
+        android:textColor="#FFFFFF"/>
 
 </LinearLayout>
