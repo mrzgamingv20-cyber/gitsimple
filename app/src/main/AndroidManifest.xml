@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:label="GitSimple"
+        android:theme="@style/Theme.GitSimple">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RepoListActivity" />
+    </application>
+
+</manifest
+cat > ~/GitSimple/app/src/main/res/values/themes.xml << 'EOF'
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.GitSimple" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#238636</item>
+        <item name="colorPrimaryVariant">#196127</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:windowBackground">#0D1117</item>
+    </style>
+</resources>
